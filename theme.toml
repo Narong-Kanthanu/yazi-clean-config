@@ -1,0 +1,5 @@
+# default theme
+[flavor]
+dark = "everforest-medium"
+light = "everforest-medium"
+use = "everforest-medium"

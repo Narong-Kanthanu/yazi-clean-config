@@ -1,0 +1,41 @@
+# custom manager
+[manager]
+show_hidden = false
+
+# custom action
+[opener]
+edit = [
+	{ run = 'vim "$@"', block = true, for = "unix", desc = "Open with vim" },
+]
+play = [
+	{ run = 'bash "$@"', for = "unix", orphan = true, desc = "Exec bash script" },
+]
+open = [
+	{ run = 'open "$@"', for = "unix", desc = "Open" },
+]
+
+[open]
+prepend_rules = [
+	{ name = "*.json", use = "edit" },
+	{ name = "*.ts", use = "edit" },
+	{ name = "*.js", use = "edit" },
+	{ name = "*.yml", use = "edit" },
+	{ name = "*.ry", use = "edit" },
+	{ name = "*.sh", use = [ "edit", "play" ] },
+	{ name = "*.md", use = "edit" },
+	{ name = "*.html", use = "edit" },
+	{ name = "*.log", use = "edit" },
+	{ name = "*.lock", use = "edit" },
+	{ name = "*", use = "open" },
+]
+
+# fetch plugin
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
