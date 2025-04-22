@@ -1,11 +1,11 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:no-status"
-rev = "b12a9ab"
+rev = "4b027c7"
 hash = "513a23ac28e1eaa626f3a1bb6c8130d0"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:max-preview"
-rev = "b12a9ab"
+rev = "4b027c7"
 hash = "a8025f2bb311e869069364fba01abffc"
 
 [[plugin.deps]]
