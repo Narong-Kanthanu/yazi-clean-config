@@ -1,5 +1,5 @@
 # custom manager
-[manager]
+[mgr]
 show_hidden = false
 
 # custom action
