@@ -5,7 +5,7 @@ show_hidden = false
 # custom action
 [opener]
 edit = [
-	{ run = 'vim "$@"', block = true, for = "unix", desc = "Open with vim" },
+	{ run = 'nvim "$@"', block = true, for = "unix", desc = "Open with vim" },
 ]
 play = [
 	{ run = 'bash "$@"', for = "unix", orphan = true, desc = "Exec bash script" },
