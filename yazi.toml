@@ -1,6 +1,7 @@
 # custom manager
 [mgr]
 show_hidden = false
+show_border = false
 
 # custom action
 [opener]
