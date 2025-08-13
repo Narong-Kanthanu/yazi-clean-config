@@ -1,16 +1,16 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:no-status"
-rev = "b886025"
+rev = "e95c7b3"
 hash = "3e023d31f29201efdac2a6ae35fedb78"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "b886025"
+rev = "e95c7b3"
 hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "b886025"
+rev = "e95c7b3"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[flavor.deps]]
@@ -20,5 +20,5 @@ hash = "f4458ebaf8961d714eba05fe5ba40166"
 
 [[flavor.deps]]
 use = "Chromium-3-Oxide/everforest-medium"
-rev = "3d5f847"
-hash = "9b4190e2447f2c843fee23ea5f068f6"
+rev = "0158f0f"
+hash = "dbbbfe681e156c28303efb1f44b6cbc4"
