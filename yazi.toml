@@ -1,7 +1,23 @@
 # custom manager
 [mgr]
-show_hidden = false
-show_border = false
+show_hidden  = false
+show_border  = false
+show_symlink = true
+title_format = ""
+ratio        = [1, 2, 5]
+
+# custom preview
+[preview]
+wrap            = "no"
+tab_size        = 2
+max_width       = 5000
+max_height      = 5000
+cache_dir       = ""
+image_delay     = 30
+image_filter    = "nearest"
+image_quality   = 70
+ueberzug_scale  = 1
+ueberzug_offset = [ 0, 0, 0, 0 ]
 
 # custom action
 [opener]
