@@ -37,12 +37,15 @@ prepend_rules = [
 	{ name = "*.ts", use = "edit" },
 	{ name = "*.js", use = "edit" },
 	{ name = "*.yml", use = "edit" },
+	{ name = "*.yaml", use = "edit" },
 	{ name = "*.ry", use = "edit" },
 	{ name = "*.sh", use = [ "edit", "play" ] },
 	{ name = "*.md", use = "edit" },
 	{ name = "*.html", use = "edit" },
 	{ name = "*.log", use = "edit" },
 	{ name = "*.lock", use = "edit" },
+	{ name = "*.toml", use = "edit" },
+	{ name = "*.pem", use = "edit" },
 	{ name = "*", use = "open" },
 ]
 
