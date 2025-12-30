@@ -14,11 +14,6 @@ rev = "517619a"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[flavor.deps]]
-use = "sanjinso/monokai-vibrant"
-rev = "8b68223"
-hash = "f4458ebaf8961d714eba05fe5ba40166"
-
-[[flavor.deps]]
 use = "Chromium-3-Oxide/everforest-medium"
 rev = "0158f0f"
 hash = "a7c36abf0b13289aceb1c20a17c6a63e"
