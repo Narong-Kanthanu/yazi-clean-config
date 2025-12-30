@@ -21,4 +21,4 @@ hash = "f4458ebaf8961d714eba05fe5ba40166"
 [[flavor.deps]]
 use = "Chromium-3-Oxide/everforest-medium"
 rev = "0158f0f"
-hash = "dbbbfe681e156c28303efb1f44b6cbc4"
+hash = "a7c36abf0b13289aceb1c20a17c6a63e"
