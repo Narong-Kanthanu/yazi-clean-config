@@ -36,6 +36,7 @@ prepend_rules = [
 	{ name = "*.json", use = "edit" },
 	{ name = "*.ts", use = "edit" },
 	{ name = "*.js", use = "edit" },
+	{ name = "*.cs", use = "edit" },
 	{ name = "*.yml", use = "edit" },
 	{ name = "*.yaml", use = "edit" },
 	{ name = "*.ry", use = "edit" },
