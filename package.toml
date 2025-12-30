@@ -1,16 +1,16 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:no-status"
-rev = "d1c8baa"
+rev = "517619a"
 hash = "3e023d31f29201efdac2a6ae35fedb78"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "d1c8baa"
-hash = "63b6c222bf2103b3023389dde5e2ecfe"
+rev = "517619a"
+hash = "73788c7dc5827ef4677c502c3ea8fa19"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "d1c8baa"
+rev = "517619a"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[flavor.deps]]
