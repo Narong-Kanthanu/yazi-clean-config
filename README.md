@@ -22,27 +22,27 @@ git clone https://github.com/YOUR_USERNAME/yazi-clean-config.git ~/.config/yazi
 Install plugins and flavors:
 
 ```bash
-ya pack -i
+ya pkg install
 ```
 
 ## Configuration Structure
 
-| File | Description |
-|------|-------------|
-| `yazi.toml` | Main configuration (manager, preview, file openers) |
-| `keymap.toml` | Custom keybindings |
-| `theme.toml` | Everforest-based color theme |
-| `init.lua` | Plugin initialization and git styling |
-| `package.toml` | Plugin/flavor dependencies |
+| File           | Description                                         |
+| -------------- | --------------------------------------------------- |
+| `yazi.toml`    | Main configuration (manager, preview, file openers) |
+| `keymap.toml`  | Custom keybindings                                  |
+| `theme.toml`   | Everforest-based color theme                        |
+| `init.lua`     | Plugin initialization and git styling               |
+| `package.toml` | Plugin/flavor dependencies                          |
 
 ## Plugins
 
-| Plugin | Description |
-|--------|-------------|
-| full-border | Rounded borders around panels |
-| no-status | Hides the status bar |
-| git | Git status indicators in file list |
-| max-preview | Toggle maximize preview (`P` key) |
+| Plugin      | Description                        |
+| ----------- | ---------------------------------- |
+| full-border | Rounded borders around panels      |
+| no-status   | Hides the status bar               |
+| git         | Git status indicators in file list |
+| max-preview | Toggle maximize preview (`P` key)  |
 
 ## Features
 
@@ -55,7 +55,7 @@ ya pack -i
 
 ```bash
 # Update plugins and flavors
-ya pack -u
+ya pkg upgrade
 ```
 
 ## References
