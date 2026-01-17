@@ -1,6 +1,8 @@
 # yazi-clean-config
 
-Yazi configuration for macOS with Neovim integration and enhanced file preview.
+Yazi configuration for macOS with Neovim integration and clean minimal interface.
+
+![Screenshot](screenshot.png)
 
 ## Prerequisites
 
@@ -19,7 +21,7 @@ Clone this repository to your Yazi config directory:
 git clone https://github.com/YOUR_USERNAME/yazi-clean-config.git ~/.config/yazi
 ```
 
-Install plugins and flavors:
+Install plugins:
 
 ```bash
 ya pkg install
@@ -31,30 +33,50 @@ ya pkg install
 | -------------- | --------------------------------------------------- |
 | `yazi.toml`    | Main configuration (manager, preview, file openers) |
 | `keymap.toml`  | Custom keybindings                                  |
-| `theme.toml`   | Everforest-based color theme                        |
+| `theme.toml`   | Custom Everforest-based color theme                 |
 | `init.lua`     | Plugin initialization and git styling               |
-| `package.toml` | Plugin/flavor dependencies                          |
+| `package.toml` | Plugin dependencies                                 |
 
 ## Plugins
 
 | Plugin      | Description                        |
 | ----------- | ---------------------------------- |
-| full-border | Rounded borders around panels      |
 | no-status   | Hides the status bar               |
 | git         | Git status indicators in file list |
-| max-preview | Toggle maximize preview (`P` key)  |
+| full-border | Rounded borders (available, not enabled by default) |
 
 ## Features
 
+- **Clean interface**: No status bar, hidden cwd path for minimal look
 - **Editor**: Neovim for all text files
-- **Preview ratio**: 1:2:5 (parent:current:preview)
+- **Preview ratio**: 1:2:5 (parent:current:preview) - heavy emphasis on preview
 - **Git indicators**: A (green), M (blue), D (red bold)
-- **File associations**: JSON, TypeScript, JavaScript, C#, YAML, Markdown, and more
+- **Theme**: Custom Everforest-based color scheme
+- **File associations**: JSON, TypeScript, JavaScript, C#, YAML, Markdown, Shell, HTML, TOML, and more
+
+## Customization
+
+### Enable full-border plugin
+
+To enable rounded borders, add this line to `init.lua`:
+
+```lua
+require("full-border"):setup({ type = ui.Border.ROUNDED })
+```
+
+### Show cwd path
+
+To show the current directory path, edit `theme.toml`:
+
+```toml
+[mgr]
+cwd = { fg = "#7fbbb3" }  # Change from background color to visible color
+```
 
 ## Updating
 
 ```bash
-# Update plugins and flavors
+# Update plugins
 ya pkg upgrade
 ```
 
