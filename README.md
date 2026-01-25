@@ -18,7 +18,7 @@ brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide resvg imagema
 Clone this repository to your Yazi config directory:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/yazi-clean-config.git ~/.config/yazi
+git clone https://github.com/Narong-Kanthanu/yazi-clean-config.git ~/.config/yazi
 ```
 
 Install plugins:
@@ -39,11 +39,21 @@ ya pkg install
 
 ## Plugins
 
-| Plugin      | Description                        |
-| ----------- | ---------------------------------- |
-| no-status   | Hides the status bar               |
-| git         | Git status indicators in file list |
+| Plugin      | Description                                         |
+| ----------- | --------------------------------------------------- |
+| no-status   | Hides the status bar                                |
+| git         | Git status indicators in file list                  |
 | full-border | Rounded borders (available, not enabled by default) |
+| max-preview | Toggle maximize preview pane (bound to `P`, see note below) |
+
+**Note:** The `max-preview` plugin has a keymap binding (`P`) but is not yet in `package.toml`. To enable it, add to `package.toml`:
+
+```toml
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+```
+
+Then run `ya pkg install` to install.
 
 ## Features
 

@@ -9,11 +9,11 @@ This is a Yazi file manager configuration repository for macOS. Yazi is a termin
 ## Commands
 
 ```bash
-# Install/update plugins and flavors from package.toml
-ya pack -i
+# Install plugins and flavors from package.toml
+ya pkg install
 
 # Upgrade all plugins and flavors to latest versions
-ya pack -u
+ya pkg upgrade
 ```
 
 ## Configuration Structure
@@ -22,15 +22,20 @@ ya pack -u
 - `keymap.toml` - Custom keybindings
 - `theme.toml` - Color theme (custom Everforest-based theme, overrides flavor)
 - `init.lua` - Plugin initialization and git status styling
-- `package.toml` - Plugin/flavor dependencies managed by `ya pack`
+- `package.toml` - Plugin/flavor dependencies managed by `ya pkg`
 
 ## Plugins
 
 Managed via `package.toml` (installed to `plugins/` which is gitignored):
-- **full-border** - Rounded borders around panels
 - **no-status** - Hides the status bar
 - **git** - Git status indicators in file list
-- **max-preview** - Toggle maximize preview pane (bound to `P`)
+- **full-border** - Rounded borders around panels (available, not enabled by default)
+
+Note: `keymap.toml` has a binding for `max-preview` plugin (`P` key) but the plugin is not in `package.toml`. Add it if needed:
+```toml
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+```
 
 ## Key Customizations
 
