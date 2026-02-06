@@ -1,6 +1,6 @@
 # custom manager
 [mgr]
-show_hidden  = false
+show_hidden  = true
 show_border  = false
 show_symlink = true
 title_format = ""
