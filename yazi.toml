@@ -33,30 +33,25 @@ open = [
 
 [open]
 prepend_rules = [
-	{ name = "*.json", use = "edit" },
-	{ name = "*.ts", use = "edit" },
-	{ name = "*.js", use = "edit" },
-	{ name = "*.cs", use = "edit" },
-	{ name = "*.yml", use = "edit" },
-	{ name = "*.yaml", use = "edit" },
-	{ name = "*.ry", use = "edit" },
-	{ name = "*.sh", use = [ "edit", "play" ] },
-	{ name = "*.md", use = "edit" },
-	{ name = "*.html", use = "edit" },
-	{ name = "*.log", use = "edit" },
-	{ name = "*.lock", use = "edit" },
-	{ name = "*.toml", use = "edit" },
-	{ name = "*.pem", use = "edit" },
-	{ name = "*", use = "open" },
+	{ url = "*.json", use = "edit" },
+	{ url = "*.ts", use = "edit" },
+	{ url = "*.js", use = "edit" },
+	{ url = "*.cs", use = "edit" },
+	{ url = "*.yml", use = "edit" },
+	{ url = "*.yaml", use = "edit" },
+	{ url = "*.ry", use = "edit" },
+	{ url = "*.sh", use = [ "edit", "play" ] },
+	{ url = "*.md", use = "edit" },
+	{ url = "*.html", use = "edit" },
+	{ url = "*.log", use = "edit" },
+	{ url = "*.lock", use = "edit" },
+	{ url = "*.toml", use = "edit" },
+	{ url = "*.pem", use = "edit" },
+	{ url = "*", use = "open" },
 ]
 
-# fetch plugin
-[[plugin.prepend_fetchers]]
-id   = "git"
-name = "*"
-run  = "git"
-
-[[plugin.prepend_fetchers]]
-id   = "git"
-name = "*/"
-run  = "git"
+[plugin]
+prepend_fetchers = [
+  { group = "git", url = "*", run = "git" },
+  { group = "git", url = "*/", run = "git" }
+]
