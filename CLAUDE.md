@@ -21,14 +21,13 @@ ya pkg upgrade
 - `yazi.toml` - Main configuration (manager settings, preview options, file openers, open rules)
 - `keymap.toml` - Custom keybindings
 - `theme.toml` - Color theme (custom Everforest-based theme, overrides flavor)
-- `init.lua` - Plugin initialization and git status styling
+- `init.lua` - Plugin initialization
 - `package.toml` - Plugin/flavor dependencies managed by `ya pkg`
 
 ## Plugins
 
 Managed via `package.toml` (installed to `plugins/` which is gitignored):
 - **no-status** - Hides the status bar
-- **git** - Git status indicators in file list
 - **full-border** - Rounded borders around panels (available, not enabled by default)
 
 Note: `keymap.toml` has a binding for `max-preview` plugin (`P` key) but the plugin is not in `package.toml`. Add it if needed:
@@ -41,5 +40,4 @@ use = "yazi-rs/plugins:max-preview"
 
 - Editor: nvim for all text files
 - Preview ratio: 1:2:5 (parent:current:preview) - heavy emphasis on preview
-- Git indicators: A (green), M (blue), D (red bold)
 - Custom file associations in `yazi.toml` under `[open].prepend_rules`

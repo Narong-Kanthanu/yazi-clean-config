@@ -49,9 +49,3 @@ prepend_rules = [
 	{ url = "*.pem", use = "edit" },
 	{ url = "*", use = "open" },
 ]
-
-[plugin]
-prepend_fetchers = [
-  { group = "git", url = "*", run = "git" },
-  { group = "git", url = "*/", run = "git" }
-]
